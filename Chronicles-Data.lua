@@ -1,9 +1,10 @@
 local ADDON_NAME, private = ...
-private.addon_name = "Chronicles-Origins"
+private.addon_name = "Chronicles-Data"
+private.Chronicles = _G.Chronicles or private.Chronicles or {}
 
-local ChroniclesOrigins = LibStub("AceAddon-3.0"):NewAddon(private.addon_name)
+local ChroniclesData = LibStub("AceAddon-3.0"):NewAddon(private.addon_name)
 
-function ChroniclesOrigins:OnInitialize()
+function ChroniclesData:OnInitialize()
     if (ChroniclesPluginData.Register ~= nil) then
         ChroniclesPluginData.Register()
     else
